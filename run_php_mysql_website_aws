@@ -64,7 +64,7 @@ Move the PHP index file (highlighted above) to the first position after the Dire
 	Install the commonly required php modules by using the below commands - do remeber replace the php version number with your by checking the php -v command 
 	For Example if the php -v command shows 7.4 version installed then you have to replace the 7.2 with 7.4 in the below command
 	
-sudo apt install php8.1-common php8.1-mysql php8.1-xml php8.1-xmlrpc php8.1-curl php8.1-gd php8.1-imagick php8.1-cli php8.1-dev php8.1-imap php8.1-mbstring php8.1-opcache php8.1-soap php8.1-zip php8.1-intl -y	
+  sudo apt install php8.1-common php8.1-mysql php8.1-xml php8.1-xmlrpc php8.1-curl php8.1-gd php8.1-imagick php8.1-cli php8.1-dev php8.1-imap php8.1-mbstring php8.1-opcache php8.1-soap php8.1-zip php8.1-intl -y	
 	sudo systemctl restart apache2
 	
 ==================================================
@@ -99,7 +99,9 @@ Warning: When the prompt appears, “apache2” is highlighted, but not selected
 
   sudo phpenmod mbstring
   sudo systemctl restart apache2
-
+  ===========Or Download from official website ===========
+  wget https://www.phpmyadmin.net/downloads/phpMyAdmin-latest-all-languages.tar.gz
+  mkdir phpMyAdmin && tar -xvzf phpMyAdmin-latest-all-languages.tar.gz -C phpMyAdmin --strip-components 1
 ===================================================
 
 http://your_domain_or_IP/phpmyadmin
